@@ -8,10 +8,11 @@
 #                         msg="Subject:Hello\n\nThis is the body of the email.\n Taha Ahmed Hussein")
 
 import datetime as dt
-
+monday = 0
 now = dt.datetime.now()
 day_of_week = now.weekday()
-print(day_of_week)
 
-date_of_birth = dt.datetime(year=1996 ,month=4 ,day=17)
-print(date_of_birth)
+if day_of_week == monday:
+    print("Hello, Taha")
+else:
+    print("Its not Monday")
